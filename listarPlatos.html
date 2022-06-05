@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar platos</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/listarPlatos.css">
+</head>
+<body>
+    <section id="sct-platillos" class="seccion">
+        <nav>
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="registrarPlatos.html">Agregar platillo</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1>Listado de Platillos</h1>
+        <div>
+            <label for="txt-filtro">Filtrar</label>
+            <input type="text" id="txt-filtro">
+        </div>
+        <table id="tbl-usuarios" class="tabla">
+           <thead>
+               <tr>
+                   <th>-Nombre del Platillo--</th>
+                   <th>/Tipo de Carne</th>
+                   <th>/Verdura</th>
+                   <th>/Vegetal</th>
+                   <th>/Especias</th>
+                   <th>/Salsa</th>
+                   <th>/Precio</th>
+                   <th>--Eliminar datos-</th>
+                   <th></th>
+               </tr>
+           </thead>
+
+           <tbody>
+           </tbody>
+        </table>
+
+        <div class="claseBoton">
+            <button type="button" id="btn-agregar-platillo" class="btn-agregar">Agregar platillo</button>
+        </div>
+    </section>
+
+    <footer>
+        <h4>Copyright © 2022 registrar platillos. Todos los derechos reservados.</h4>
+    </footer>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+     <script src="/js/servicio-general.js"></script>
+     <script src="/js/listar-platos.js"></script>
+</body>
+</html>

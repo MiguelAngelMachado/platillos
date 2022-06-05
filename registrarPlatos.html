@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Registrar platos</title>
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/registrarPlatos.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>Registrar Platillos de Costa Rica</h1>
+    <div class="nav-links" id="navLinks">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+         <li><a href="listarPlatos.html">Lista de platillos</a></li>
+      </ul>
+    </div>
+     </header>
+     <section>
+       <h2>Agregar un nuevo platillo</h2>
+       <form action="" id="form">
+         <label>Agregar nombre del platillo</label>
+         <input type="text" id="nombrePlatillo" placeholder="Nombre del Platillo">
+         <label>Seleccione tipo de Carne</label>
+         <select id="carne">
+            <option value="">--Seleccione Carne--</option>
+            <option value="pollo">Pollo</option>
+             <option value="res">Res</option>
+             <option value="pescado">Pescado</option>
+         </select>
+         <label for="verdura">Seleccione Verdura</label>
+         <select id="verdura">
+             <option value="">--Seleccione Verdura--</option>
+             <option value="zanahoria">Zanahoria</option>
+             <option value="papas">Papas</option>
+         </select>
+         <label for="vegetal">Seleccione Vegetal</label>
+         <select id="vegetal">
+             <option value="">--Seleccione Vegetal</option>
+             <option value="chile">Chile</option>
+             <option value="cebolla">Cebolla</option>
+            </select>
+            <label for="especias">Seleccione especias</label>
+            <select id="especias">
+              <option value="">--Seleccione Especias</option>
+              <option value="cilantro">Cilantro</option>
+              <option value="comino">Comino</option>
+            </select>
+            <label for="salsa">Seleccione Salsa</label>
+            <select id="salsa">
+                 <option value="">--Seleccione Salsa</option>
+                 <option value="salsa-de-tomate">Salsa de Tomate</option>
+                 <option value="salsa-mayonesa">Salsa Mayonesa</option>
+            </select>
+            <label for="Precio">Precio</label>
+            <input type="number" id="precio" placeholder="Agregar Precio" min="1">
+            <button type="button" class="btn-registro" id="btn-registrar">Registrar</button>
+       </form>
+     </section>
+     <footer>
+       <h4>Copyright © 2022 registrar platillos. Todos los derechos reservados.</h4>
+     </footer>
+         <!-- 1. Cargar bibliotecas externas -->
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+         <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+         <!-- 2. Enlazar el servicio general que comunica con el servidor -->
+         <script src="/js/servicio-general.js"></script>
+         <!-- 3. controladores de las paginas html -->
+         <script src="/js/registrarPlatos.js"></script>
+</body>
+</html>

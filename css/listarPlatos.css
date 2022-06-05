@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(212, 212, 212);
+}
+
+.seccion {
+    width: 80%;
+    margin: auto;
+    background-color: rgb(247, 38, 10);
+    padding: 30px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+} 
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+h1{
+    text-align: center;
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.claseBoton {
+    margin: 100px 0 0 0;
+}
+
+label {
+    font-size: 20px;
+    color: white;
+}
+
+#txt-filtro {
+    border-radius: 25px;
+    border: none;
+    outline: none;
+}
+
+.btn-agregar {
+    width: 200px;
+    padding: 10px 20px;
+    background: rgb(250, 234, 12);
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;    
+}
+
+.btn-agregar:hover {
+    background: #fad60d;
+    cursor: pointer;
+    color:  rgb(255, 238, 0);
+}
+
+.tabla {
+    width: 80%;
+    margin: 30px;
+}
+
+thead {
+    border: solid 1px white;
+}
+
+.tabla tbody {
+    width: 80%;
+    margin: 30px;
+}
+
+.tabla th {
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+
+.btn-eliminar {
+    width: 100px;
+    padding: 10px 5px;
+    background: rgb(247, 38, 10);
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #fad60d;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.btn-eliminar:hover {
+    background: rgb(247, 38, 10);
+    cursor: pointer;
+    color: #ffda06;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    text-align: center;
+    background-color: rgb(247, 38, 10);
+    height: 60px;
+    line-height: 60px;
+    margin-top: 390px;
+}
